@@ -18,10 +18,10 @@ body {
 header {
   gap: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
-.image img{
+img{
   width: 4rem;
 }
 nav ul {
@@ -30,12 +30,26 @@ nav ul {
   gap: 20px;
 }
 nav a {
+  color: var(--warnaOrange);
   font-weight: bold;
   text-decoration: none;
 }
-nav a:hover{
-  color: var(--warnaBiru);
+nav a:hover {
+  color: var(--warnaAbu);
 }
 nav a:active {
-  color: var(--warnaOrange);
+  color: var(--warnaBiru);
+}
+main {
+  margin: 20px 0;
+  display: flex;
+}
+aside table {
+  text-align: left;
+}
+aside img {
+  width: 15rem; 
+}
+footer {
+  text-align: center;
 }
