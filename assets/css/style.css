@@ -41,8 +41,17 @@ nav a:active {
   color: var(--warnaBiru);
 }
 main {
-  margin: 20px 0;
   display: flex;
+  column-gap: 1rem;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+main #content {
+  width: 65rem;
+  flex-wrap: wrap;
+}
+main aside {
+  flex-wrap: wrap;
 }
 aside table {
   text-align: left;
@@ -52,4 +61,16 @@ aside img {
 }
 footer {
   text-align: center;
+}
+
+@media screen and (max-width:800px) {
+  main {
+    row-gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    justify-content: center;
+  }
+  footer {
+    margin-top: 1rem;
+  }
 }
